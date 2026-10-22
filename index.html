@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gourmet Recipe & Culinary Studio | Haute Gastronomie & Masterclasses</title>
+  <meta name="description" content="Welcome to Gourmet Recipe & Culinary Studio — an ultra-luxury culinary atelier offering Michelin-caliber masterclasses, secret haute gastronomy recipes, and bespoke private tasting salons.">
+  <meta name="keywords" content="gourmet recipes, culinary studio, michelin masterclass, fine dining, wine pairing, cooking workshop, private chef atelier">
+  
+  <!-- Favicon SVG & Apple Touch Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Luxury Glow Spots -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="nav-inner">
+        
+        <!-- Brand Identity -->
+        <a href="#hero" class="brand-logo" id="brand-logo-link" aria-label="Gourmet Recipe & Culinary Studio Home">
+          <div class="brand-crest">⚜</div>
+          <div class="brand-text">
+            <span class="brand-title">Étoile & Atelier</span>
+            <span class="brand-subtitle">Gourmet Recipe & Culinary Studio</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#recipes" class="nav-link" id="nav-link-recipes">Haute Recipes</a></li>
+            <li><a href="#atelier" class="nav-link" id="nav-link-atelier">The Studio</a></li>
+            <li><a href="#masterclasses" class="nav-link" id="nav-link-classes">Masterclasses</a></li>
+            <li><a href="#pairings" class="nav-link" id="nav-link-pairings">Wine & Pairings</a></li>
+            <li><a href="#maestros" class="nav-link" id="nav-link-maestros">Maestros</a></li>
+            <li><a href="#reservations" class="nav-link" id="nav-link-reservations">Reservations</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions: Theme Switcher, Audio & CTA -->
+        <div class="header-actions">
+          
+          <!-- Audio Ambience Feedback Toggle (Desktop) -->
+          <button class="audio-toggle-btn header-audio-btn" title="Toggle Culinary Audio Ambience" aria-label="Toggle Audio Sound">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+
+          <!-- Theme Toggle (Dark & Light Mode) (Desktop) -->
+          <button class="theme-toggle-btn header-theme-btn" title="Switch Theme (Dark / Light)" aria-label="Toggle Theme Mode">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- Book Workshop Button -->
+          <a href="#reservations" class="btn btn-primary btn-sm header-cta" id="header-book-btn">
+            <span>Reserve Atelier</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  <!-- Mobile & Tablet 1024 Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <div class="drawer-brand-center">
+        <span class="brand-crest" style="margin: 0 auto 6px auto;">⚜</span>
+        <span style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;">Étoile & Atelier</span>
+      </div>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">✕</button>
+    </div>
+
+    <!-- Centered Navigation Links -->
+    <ul class="mobile-nav-links">
+      <li><a href="#recipes" class="mobile-nav-link">Haute Recipes</a></li>
+      <li><a href="#atelier" class="mobile-nav-link">The Studio</a></li>
+      <li><a href="#masterclasses" class="mobile-nav-link">Masterclasses</a></li>
+      <li><a href="#pairings" class="mobile-nav-link">Wine & Pairings</a></li>
+      <li><a href="#maestros" class="mobile-nav-link">Maestros</a></li>
+      <li><a href="#reservations" class="mobile-nav-link">Reserve Experience</a></li>
+    </ul>
+
+    <!-- Centered Sound & Theme Icons inside Hamburger Menu -->
+    <div class="drawer-controls-box">
+      <span class="drawer-controls-title">Studio Ambience & Theme</span>
+      <div class="drawer-controls-row">
+        
+        <!-- Sound Ambience Toggle -->
+        <button class="audio-toggle-btn drawer-control-btn" title="Toggle Culinary Audio Ambience" aria-label="Toggle Audio Sound">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <span class="drawer-btn-label">Acoustics</span>
+        </button>
+
+        <!-- Theme Toggle (Dark & Light Mode) -->
+        <button class="theme-toggle-btn drawer-control-btn" title="Switch Theme (Dark / Light)" aria-label="Toggle Theme Mode">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="drawer-btn-label">Theme Mode</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Centered Drawer CTA -->
+    <div class="drawer-footer">
+      <a href="#reservations" class="btn btn-primary mobile-nav-link" style="width: 100%; justify-content: center;">
+        <span>Reserve Atelier Table</span>
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy Content -->
+          <div class="hero-content">
+            <div class="hero-badge-pill">
+              <span class="sparkle">✦</span>
+              <span>EST. 2018 · MICHELIN GUIDE RECOGNIZED · PRIVATE CULINARY ATELIER</span>
+            </div>
+
+            <h1 class="hero-title">
+              Where Culinary Artistry Meets The <span class="gold-gradient-text">Atelier Experience</span>.
+            </h1>
+
+            <p class="hero-description">
+              Immerse yourself in Michelin-grade masterclasses, confidential haute cuisine recipes, and private salon degustations orchestrated by world-renowned culinary directors and master sommeliers.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#recipes" class="btn btn-primary" id="hero-explore-recipes-btn">
+                <span>Explore Recipe Vault</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#reservations" class="btn btn-outline" id="hero-book-class-btn">
+                <span>Book Masterclass</span>
+              </a>
+            </div>
+
+            <!-- Key Atelier Stat Counters -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">16+</span>
+                <span class="stat-label">Michelin Stars Collective</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">48+</span>
+                <span class="stat-label">Annual Masterclasses</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99.4%</span>
+                <span class="stat-label">Connoisseur Acclaim</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Showcase with Floating Badges -->
+          <div class="hero-visual-card">
+            
+            <!-- Floating Badge Top Left -->
+            <div class="floating-glass-badge badge-top-left">
+              <div class="badge-icon-box">⚜</div>
+              <div>
+                <div class="badge-meta-title">Chef's Signature</div>
+                <div class="badge-meta-value">Canard Rôti aux Violettes</div>
+              </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero_plate.jpg" alt="Michelin-grade roasted duck breast with pomegranate glaze and edible violas" id="hero-showcase-img">
+            </div>
+
+            <!-- Floating Badge Bottom Right -->
+            <div class="floating-glass-badge badge-bottom-right">
+              <div class="badge-icon-box">★</div>
+              <div>
+                <div class="badge-meta-title">Single-Origin Terroir</div>
+                <div class="badge-meta-value">3-Star Culinary Mastery</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HAUTE RECIPE VAULT & EXPLORER
+         ========================================================================== -->
+    <section class="section section-darker" id="recipes">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Haute Cuisine Repository</span>
+          <h2 class="section-title">The Master Chef's Recipe Vault</h2>
+          <p class="section-subtitle">
+            Explore meticulously documented recipes from our Michelin-recognized repertoire. Every dish includes dynamic serving recalculations, step-by-step studio guides, and sommelier cellar pairings.
+          </p>
+
+          <!-- Category Filter Bar -->
+          <div class="recipe-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Creations</button>
+            <button class="filter-btn" data-filter="entrees">Signature Entrées</button>
+            <button class="filter-btn" data-filter="seafood">Seafood & Caviar</button>
+            <button class="filter-btn" data-filter="pastry">Haute Pâtisserie</button>
+            <button class="filter-btn" data-filter="modern">Modern Gastronomy</button>
+          </div>
+        </div>
+
+        <!-- Recipe Cards Dynamic Grid -->
+        <div class="recipe-cards-grid" id="recipes-cards-container">
+          <!-- Populated by JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE ATELIER STUDIO & SPACES
+         ========================================================================== -->
+    <section class="section" id="atelier">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Gastronomic Sanctuary</span>
+          <h2 class="section-title">The Culinary Studio & Atelier</h2>
+          <p class="section-subtitle">
+            Step behind the brass doors into our Parisian-inspired gastronomic atelier. Designed with bespoke induction islands, a 2,400-bottle glass wine cellar, and private salon seating for intimate dining.
+          </p>
+
+          <!-- Atelier Facilities Switcher -->
+          <div class="atelier-tabs-nav">
+            <button class="atelier-tab-btn active" data-atelier-tab="hearth">Master Cook Stations</button>
+            <button class="atelier-tab-btn" data-atelier-tab="cellar">The Grand Wine Vault</button>
+            <button class="atelier-tab-btn" data-atelier-tab="pastry">Pâtisserie Lab</button>
+          </div>
+        </div>
+
+        <!-- Showcase Box -->
+        <div class="atelier-showcase-box">
+          <div class="atelier-visual">
+            <img src="assets/images/studio_interior.jpg" alt="Gourmet Recipe & Culinary Studio interior with marble workstations and wine wall" id="atelier-tab-img">
+          </div>
+
+          <div class="atelier-content">
+            <h3 id="atelier-tab-title">The Fire Hearth & Master Induction Stations</h3>
+            <p id="atelier-tab-desc">
+              Featuring 12 private chef workstations appointed with handcrafted copper cookware, French induction zones, salamanders, and custom ventilation hoods for precision thermal control.
+            </p>
+
+            <ul class="atelier-features-list">
+              <li class="atelier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Individual Miele & Molteni Suites</span>
+              </li>
+              <li class="atelier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mauviel 1830 French Copper Pans</span>
+              </li>
+              <li class="atelier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Chilled Marble Prep Surfaces</span>
+              </li>
+              <li class="atelier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Liquid Nitrogen & Aeration Tech</span>
+              </li>
+            </ul>
+
+            <a href="#reservations" class="btn btn-primary" onclick="bookClassPreset('Studio Master Workshop')">
+              <span>Book Studio Station</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MASTERCLASSES & WORKSHOPS CALENDAR
+         ========================================================================== -->
+    <section class="section section-darker" id="masterclasses">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Culinary Education</span>
+          <h2 class="section-title">Exclusive Atelier Masterclasses</h2>
+          <p class="section-subtitle">
+            Limited to 8 to 12 participants per cohort to ensure one-on-one mentorship with our resident master chefs. Includes grand cru wine tasting, full mise en place, and bespoke chef aprons.
+          </p>
+        </div>
+
+        <div class="classes-grid">
+          
+          <!-- Class Card 1 -->
+          <article class="class-card">
+            <div class="class-header">
+              <span class="class-date">Nov 12, 2026 · 14:00 - 18:30</span>
+              <span class="class-seats-badge">Only 3 Seats Left</span>
+            </div>
+            <h3 class="class-title">The Architecture of French Duck & Pomegranate Glazes</h3>
+            <p class="class-description">
+              Master the delicate art of cold-rendering duck fat, precision scoring, and crafting glossy fruit gastrique reductions alongside Michelin technique.
+            </p>
+            <div class="class-mentor">
+              <div class="recipe-chef-avatar">A</div>
+              <div class="class-mentor-info">
+                <h5>Chef Alessandro Broder</h5>
+                <span>Ex-L'Ambroisie, Paris</span>
+              </div>
+            </div>
+            <div class="class-footer">
+              <div class="class-price">$380 <span>/ guest</span></div>
+              <button class="btn btn-outline btn-sm" onclick="bookClassPreset('French Duck & Pomegranate Glazes')">Reserve Seat</button>
+            </div>
+          </article>
+
+          <!-- Class Card 2 -->
+          <article class="class-card">
+            <div class="class-header">
+              <span class="class-date">Nov 18, 2026 · 10:00 - 15:00</span>
+              <span class="class-seats-badge">4 Seats Available</span>
+            </div>
+            <h3 class="class-title">Haute Pâtisserie: Mirror Glazes & Entremet Architecture</h3>
+            <p class="class-description">
+              A comprehensive deep-dive into chocolate tempering curves, spherical silicone inserts, bubble-free mirror glazes, and gold leaf artistry.
+            </p>
+            <div class="class-mentor">
+              <div class="recipe-chef-avatar">C</div>
+              <div class="class-mentor-info">
+                <h5>Chef Camille Laurent</h5>
+                <span>World Pastry Champion 2022</span>
+              </div>
+            </div>
+            <div class="class-footer">
+              <div class="class-price">$420 <span>/ guest</span></div>
+              <button class="btn btn-outline btn-sm" onclick="bookClassPreset('Haute Pâtisserie Mirror Glaze')">Reserve Seat</button>
+            </div>
+          </article>
+
+          <!-- Class Card 3 -->
+          <article class="class-card">
+            <div class="class-header">
+              <span class="class-date">Nov 24, 2026 · 17:00 - 21:30</span>
+              <span class="class-seats-badge">Sold Out Fast</span>
+            </div>
+            <h3 class="class-title">Hokkaido Diver Scallops, Caviar & Saffron Velouté</h3>
+            <p class="class-description">
+              Techniques for flawless brown-butter caramelization, frothing delicate saffron fumet emulsions, and royal caviar quenelle plating.
+            </p>
+            <div class="class-mentor">
+              <div class="recipe-chef-avatar">K</div>
+              <div class="class-mentor-info">
+                <h5>Chef Kenji Takahashi</h5>
+                <span>Modernist Seafood Virtuoso</span>
+              </div>
+            </div>
+            <div class="class-footer">
+              <div class="class-price">$450 <span>/ guest</span></div>
+              <button class="btn btn-outline btn-sm" onclick="bookClassPreset('Hokkaido Scallops & Caviar')">Reserve Seat</button>
+            </div>
+          </article>
+
+          <!-- Class Card 4 -->
+          <article class="class-card">
+            <div class="class-header">
+              <span class="class-date">Dec 02, 2026 · 18:00 - 22:00</span>
+              <span class="class-seats-badge">5 Seats Available</span>
+            </div>
+            <h3 class="class-title">Grand Cru Terroirs & Sommelier Blind Tasting Masterclass</h3>
+            <p class="class-description">
+              An educational journey through 8 legendary French and European appellations, deciphering phenolic ripeness, terroir minerality, and oak integration.
+            </p>
+            <div class="class-mentor">
+              <div class="recipe-chef-avatar">M</div>
+              <div class="class-mentor-info">
+                <h5>Marcus Vance, MW</h5>
+                <span>Master of Wine & Sommelier</span>
+              </div>
+            </div>
+            <div class="class-footer">
+              <div class="class-price">$350 <span>/ guest</span></div>
+              <button class="btn btn-outline btn-sm" onclick="bookClassPreset('Grand Cru Terroirs Masterclass')">Reserve Seat</button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE SOMMELIER & WINE PAIRING ATELIER
+         ========================================================================== -->
+    <section class="section" id="pairings">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Sommelier Vault</span>
+          <h2 class="section-title">Interactive Wine & Flavor Pairing Atelier</h2>
+          <p class="section-subtitle">
+            Experience the harmony between gastronomy and oenology. Select a culinary creation to inspect its curated Grand Cru cellar counterpart, optimal serving temperature, and sommelier pairing principles.
+          </p>
+        </div>
+
+        <div class="pairing-studio-wrapper">
+          
+          <!-- Dish Selector Column -->
+          <div class="pairing-selector-box">
+            <h4>Select a Culinary Composition:</h4>
+            <p>Click any signature creation below to reveal its harmonizing Grand Cru pairing:</p>
+            
+            <div class="pairing-dishes-list">
+              <button class="dish-pick-btn active" data-dish-key="duck">
+                <span>Canard Rôti aux Violettes & Pomegranate</span>
+                <span>→</span>
+              </button>
+              <button class="dish-pick-btn" data-dish-key="scallops">
+                <span>Hokkaido Scallops & Oscietra Caviar</span>
+                <span>→</span>
+              </button>
+              <button class="dish-pick-btn" data-dish-key="lamb">
+                <span>Colorado Lamb Rack & Périgord Truffle Jus</span>
+                <span>→</span>
+              </button>
+              <button class="dish-pick-btn" data-dish-key="chocolate">
+                <span>Valrhona Grand Cru Dark Chocolate Entremet</span>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Pairing Display Card -->
+          <div class="pairing-result-card">
+            <span class="wine-badge">Master Sommelier Selection</span>
+            <h3 class="wine-name" id="pairing-wine-name">Domaine de la Romanée-Conti Échezeaux</h3>
+            <p class="wine-region" id="pairing-wine-region">Côte de Nuits, Burgundy, France · Vintage 2018</p>
+
+            <div class="wine-specs-grid">
+              <div>
+                <span class="wine-spec-label">Grape & Terroir</span>
+                <p class="wine-spec-val" id="pairing-wine-grape">100% Pinot Noir (Single Vineyard)</p>
+              </div>
+              <div>
+                <span class="wine-spec-label">Service Temp</span>
+                <p class="wine-spec-val" id="pairing-wine-temp">16°C (61°F)</p>
+              </div>
+            </div>
+
+            <p class="wine-sommelier-notes" id="pairing-wine-notes">
+              Intensely fragrant aromatics of wild crushed cherries, violet petals, damp autumn forest floor, and warm oriental spice. The silky tannins cut through the crispy duck breast while respecting the pomegranate reduction.
+            </p>
+
+            <div style="margin-top: 20px; font-size: 0.8rem; color: var(--accent-gold); font-weight: 500;" id="pairing-wine-rule">
+              The Sommelier Rule: High-acid, perfumed Pinot Noir elevates game fowl without overpowering nuanced floral notes.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESIDENT CULINARY MAESTROS
+         ========================================================================== -->
+    <section class="section section-darker" id="maestros">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Master Artisans</span>
+          <h2 class="section-title">The Culinary Maestros</h2>
+          <p class="section-subtitle">
+            Our atelier brings together celebrated masters spanning Michelin-starred fine dining, pastry craftsmanship, and grand cru cellar curation.
+          </p>
+        </div>
+
+        <div class="maestros-grid">
+          
+          <!-- Maestro 1 -->
+          <div class="maestro-card">
+            <div class="maestro-avatar-wrap">
+              <img src="assets/images/chef_atelier.jpg" alt="Chef Alessandro Broder, Executive Culinary Director">
+            </div>
+            <div class="maestro-role">Executive Culinary Director</div>
+            <h3 class="maestro-name">Alessandro Broder</h3>
+            <p class="maestro-bio">
+              Trained across 3-star Michelin institutions in Paris and Modena. Alessandro champions classical French foundations electrified with modern thermal precision and seasonal botanical forage.
+            </p>
+            <div class="maestro-accolades">
+              <span class="accolade-tag">3★ Michelin Alumni</span>
+              <span class="accolade-tag">Bocuse d'Or Judge</span>
+            </div>
+          </div>
+
+          <!-- Maestro 2 -->
+          <div class="maestro-card">
+            <div class="maestro-avatar-wrap">
+              <img src="assets/images/haute_pastry.jpg" alt="Chef Camille Laurent, Head Pastry Artist">
+            </div>
+            <div class="maestro-role">Head Pastry Artist</div>
+            <h3 class="maestro-name">Camille Laurent</h3>
+            <p class="maestro-bio">
+              Winner of the World Pastry Championship, Camille is renowned for her sculptural entremets, optical mirror glazes, and sugar architectural works that balance sweetness with vibrant acidity.
+            </p>
+            <div class="maestro-accolades">
+              <span class="accolade-tag">World Pastry Champion</span>
+              <span class="accolade-tag">Relais Desserts</span>
+            </div>
+          </div>
+
+          <!-- Maestro 3 -->
+          <div class="maestro-card">
+            <div class="maestro-avatar-wrap">
+              <img src="assets/images/wine_sommelier.jpg" alt="Marcus Vance, Master Sommelier">
+            </div>
+            <div class="maestro-role">Cellar Director & Master Sommelier</div>
+            <h3 class="maestro-name">Marcus Vance, MW</h3>
+            <p class="maestro-bio">
+              One of only 260 Master Sommeliers worldwide. Marcus oversees our 2,400-bottle cellar, curating biodynamic single-vineyard allocations and bespoke vintage flights for our tasting salon.
+            </p>
+            <div class="maestro-accolades">
+              <span class="accolade-tag">Master of Wine</span>
+              <span class="accolade-tag">Grand Cru Curator</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESERVATION & MASTERCLASS BOOKING SUITE
+         ========================================================================== -->
+    <section class="section" id="reservations">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Private Atelier Bookings</span>
+          <h2 class="section-title">Reserve Your Culinary Experience</h2>
+          <p class="section-subtitle">
+            Whether booking an intimate evening in our private tasting salon or claiming a workstation at our hands-on masterclass, secure your allocation below.
+          </p>
+        </div>
+
+        <div class="booking-container-card">
+          
+          <!-- Booking Type Tabs -->
+          <div class="booking-nav-tabs">
+            <button class="booking-tab-btn active" data-booking-type="dining" id="tab-booking-dining">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+              <span>Private Salon Dining (Degustation)</span>
+            </button>
+            <button class="booking-tab-btn" data-booking-type="masterclass" id="tab-booking-class">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Hands-On Masterclass Workshop</span>
+            </button>
+          </div>
+
+          <!-- Reservation Form -->
+          <form id="atelier-booking-form">
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="booking-name" class="form-label">Full Name & Title *</label>
+                <input type="text" id="booking-name" class="form-input" placeholder="e.g. Lord / Lady Julian Sterling" required>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-email" class="form-label">Email Address *</label>
+                <input type="email" id="booking-email" class="form-input" placeholder="e.g. julian@sterling.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-phone" class="form-label">Telephone / Mobile *</label>
+                <input type="tel" id="booking-phone" class="form-input" placeholder="+1 (555) 234-5678" required>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-date" class="form-label">Preferred Date *</label>
+                <input type="date" id="booking-date" class="form-input" value="2026-11-15" required>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-guests" class="form-label">Party Size (Number of Guests)</label>
+                <select id="booking-guests" class="form-select">
+                  <option value="1">1 Connoisseur</option>
+                  <option value="2" selected>2 Guests (Intimate Table)</option>
+                  <option value="4">4 Guests (Salon Table)</option>
+                  <option value="6">6 Guests (Chef's Alcove)</option>
+                  <option value="8">8 Guests (Private Dining)</option>
+                  <option value="12">12 Guests (Full Atelier Buyout)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-tier" class="form-label">Curated Experience Tier</label>
+                <select id="booking-tier" class="form-select">
+                  <option value="220" selected>Haute 7-Course Degustation ($220 / guest)</option>
+                  <option value="340">Prestige Chef’s Table & Kitchen Access ($340 / guest)</option>
+                  <option value="480">Imperial Grand Cru Experience ($480 / guest)</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label class="form-label" style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                  <input type="checkbox" id="booking-wine-pairing" checked style="width: 18px; height: 18px; accent-color: var(--accent-gold);">
+                  <span>Include Master Sommelier Grand Cru Wine Flight (+$95 / person)</span>
+                </label>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="booking-notes" class="form-label">Dietary Nuances or Special Occasion Requests</label>
+                <textarea id="booking-notes" class="form-textarea" placeholder="e.g. Vegetarian preference for one guest, celebrating 10th anniversary..."></textarea>
+              </div>
+
+            </div>
+
+            <!-- Dynamic Live Calculation Bar -->
+            <div class="pricing-live-bar">
+              <div class="pricing-info-col">
+                <h5 id="booking-experience-label">Private Atelier Dining Experience</h5>
+                <span style="font-size: 0.88rem; color: var(--text-muted);">Includes personalized mise-en-place, chef reception & concierge valet</span>
+              </div>
+              <div style="text-align: right;">
+                <span style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-muted); display: block;">Estimated Total</span>
+                <span class="pricing-calc-value" id="booking-total-price">$630</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 1.05rem;" id="submit-booking-btn">
+              <span>Confirm Atelier Reservation</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CRITICAL ACCLAIM & PRESS
+         ========================================================================== -->
+    <section class="section section-darker">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-label">Critical Acclaim</span>
+          <h2 class="section-title">Praised by Gastronomes & Critics</h2>
+        </div>
+
+        <div class="press-quotes-grid">
+          
+          <div class="press-card">
+            <div class="press-stars">★★★★★</div>
+            <p class="press-quote-text">
+              "Étoile & Atelier sets an entirely new benchmark for culinary intimacy. The duck breast reduction and liquid nitrogen truffle snow are unforgettable."
+            </p>
+            <span class="press-outlet-name">Michelin Guide Inspector Review</span>
+          </div>
+
+          <div class="press-card">
+            <div class="press-stars">★★★★★</div>
+            <p class="press-quote-text">
+              "The most exhilarating cooking masterclass in modern gastronomy. You leave not just having dined, but truly understanding flavor architecture."
+            </p>
+            <span class="press-outlet-name">Vogue Epicure Edition</span>
+          </div>
+
+          <div class="press-card">
+            <div class="press-stars">★★★★★</div>
+            <p class="press-quote-text">
+              "Marcus Vance’s Grand Cru pairings turn each course into a revelation. The cellar collection alone warrants a transatlantic voyage."
+            </p>
+            <span class="press-outlet-name">Le Figaro Gastronomie</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="brand-crest">⚜</div>
+            <div class="brand-text">
+              <span class="brand-title">Étoile & Atelier</span>
+              <span class="brand-subtitle">Gourmet Recipe & Culinary Studio</span>
+            </div>
+          </div>
+          <p>
+            A bespoke gastronomic atelier dedicated to the preservation of classical French culinary technique, modernist flavor exploration, and exceptional oenological hospitality.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">The Atelier</h4>
+          <ul class="footer-links-list">
+            <li><a href="#recipes">Haute Recipe Vault</a></li>
+            <li><a href="#atelier">Induction Workstations</a></li>
+            <li><a href="#masterclasses">Masterclass Schedule</a></li>
+            <li><a href="#pairings">Wine Cellar Pairings</a></li>
+            <li><a href="#maestros">Resident Master Chefs</a></li>
+          </ul>
+        </div>
+
+        <!-- Studio Concierge -->
+        <div>
+          <h4 class="footer-heading">Studio Concierge</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>14 Rue de la Gastronomie, 75008 Paris / 450 Madison Ave, New York</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>concierge@etoile-atelier.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+1 (800) 843-2835 (THE-ATELIER)</span>
+          </div>
+        </div>
+
+        <!-- Curated Newsletter -->
+        <div>
+          <h4 class="footer-heading">Private Allocation Dispatch</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            Receive confidential seasonal menu releases and priority reservations for guest master chef residencies.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to Private Allocation Dispatch.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your private email..." required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <span>© 2026 Gourmet Recipe & Culinary Studio (Étoile & Atelier). All Rights Reserved.</span>
+        <span>Crafted with Haute Gastronomie Precision & Excellence.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: RECIPE STUDIO & COOKING MODE
+       ========================================================================== -->
+  <div class="modal-backdrop" id="recipe-modal" role="dialog" aria-modal="true" aria-labelledby="modal-recipe-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Recipe Studio Modal">✕</button>
+      
+      <!-- Recipe Hero Image -->
+      <img src="assets/images/hero_plate.jpg" alt="Recipe Preview" class="modal-recipe-hero-img" id="modal-recipe-hero">
+
+      <div class="modal-content-pad">
+        
+        <div class="modal-recipe-header">
+          <span class="recipe-category-tag" id="modal-recipe-french">Canard Rôti au Jus de Grenade</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2rem; color: var(--text-primary); margin-bottom: 8px;" id="modal-recipe-title">Pan-Roasted Duck Breast</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 6px;" id="modal-recipe-chef">Curated by Chef Alessandro Broder</p>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6;" id="modal-recipe-desc"></p>
+        </div>
+
+        <!-- Sommelier Wine Recommendation Highlight -->
+        <div id="modal-wine-content"></div>
+
+        <!-- Interactive Servings Scaler -->
+        <div class="modal-recipe-scaler">
+          <span style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--accent-gold); letter-spacing: 0.08em;">Scale Recipe Servings:</span>
+          <button class="scaler-btn" onclick="adjustServings(-2)" aria-label="Decrease Servings">−</button>
+          <span class="servings-count" id="modal-servings-count">2 Guests</span>
+          <button class="scaler-btn" onclick="adjustServings(2)" aria-label="Increase Servings">+</button>
+          <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: auto;">Quantities auto-calculate live</span>
+        </div>
+
+        <!-- Ingredients & Cooking Steps Grid -->
+        <div class="modal-recipe-grid">
+          
+          <!-- Ingredients Column -->
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 16px; color: var(--text-primary); border-bottom: 1px solid var(--border-subtle); padding-bottom: 8px;">
+              Mise en Place
+            </h4>
+            <div id="modal-ingredients-list">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- Chef Confidential Secret Tip -->
+            <div style="margin-top: 24px; padding: 16px; background: var(--badge-bg); border: 1px solid var(--border-accent); border-radius: var(--radius-md);">
+              <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-gold); font-weight: 700; display: block; margin-bottom: 4px;">Chef's Secret Technique</span>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;" id="modal-chef-tip"></p>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Cooking Guide -->
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 16px; color: var(--text-primary); border-bottom: 1px solid var(--border-subtle); padding-bottom: 8px;">
+              Culinary Execution (Tap to Complete)
+            </h4>
+            <div id="modal-steps-list">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- Interactive Culinary Countdown Timer -->
+            <div class="culinary-timer-box">
+              <div>
+                <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); display: block;">Atelier Precision Timer</span>
+                <span class="timer-digits" id="timer-display">05:00</span>
+              </div>
+              <div class="timer-controls">
+                <button class="btn btn-outline btn-sm" id="timer-start-btn">Start</button>
+                <button class="btn btn-outline btn-sm" id="timer-reset-btn">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: right; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+          <button class="btn btn-primary" onclick="window.print()">Print Atelier Recipe Card</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: RESERVATION CONFIRMATION DIALOG
+       ========================================================================== -->
+  <div class="modal-backdrop" id="confirmation-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 560px;">
+      <button class="modal-close-btn" aria-label="Close Confirmation Modal">✕</button>
+      <div class="modal-content-pad" id="confirmation-details">
+        <!-- Rendered via JS -->
+      </div>
+      <div style="padding: 0 40px 32px 40px; display: flex; gap: 12px; justify-content: center;">
+        <button class="btn btn-outline btn-sm" onclick="showToast('Receipt saved to clipboard.');">Copy Reference</button>
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('confirmation-modal').classList.remove('open'); document.body.style.overflow='';">Return to Atelier</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
